@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Shelter Kosovo - Adopting & Loving Animals</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="#home">
+                    <div class="logo-icon">🐾</div>
+                    <span>Animal Shelter Kosovo</span>
+                </a>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#animals">Animals</a>
+                <a href="volunteering.html">Volunteer</a>
+                <a href="adoption.html">Adopt</a>
+                <a href="#contact" class="btn btn-primary">Contact Us</a>
+            </div>
+            <div class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <img src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?auto=format&fit=crop&w=1500&q=80" alt="Happy animals" class="hero-image">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="badge">🐾 Saving Lives in Kosovo</div>
+            <h1 class="hero-title">
+                <span class="gradient-text">Adopting & Loving</span><br>
+                Animals in Kosovo
+            </h1>
+            <p class="hero-description">
+                Give a loving home to animals in need. Every adoption saves a life and brings joy to families across Kosovo.
+            </p>
+            <div class="hero-buttons">
+                <a href="adoption.html" class="btn btn-primary btn-lg">
+                    Adopt Now <span class="arrow">→</span>
+                </a>
+                <a href="#about" class="btn btn-outline btn-lg">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <div class="badge">🐾 Our Services</div>
+                <h2>Welcome to Our <span class="text-green">Animal Care</span> Community</h2>
+                <p>Dive into a world of whiskers, purrs, and heartwarming stories. Whether you're a pet lover, new pet parent, or just curious, we're here to help you every step of the way.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card loading">
+                    <div class="service-icon blue">❤️</div>
+                    <h3>Animal Cafe</h3>
+                    <p>Relax with adorable animals while enjoying your favorite drink. Our animal cafe is a peaceful haven for animal lovers.</p>
+                </div>
+                <div class="service-card loading">
+                    <div class="service-icon green">🛡️</div>
+                    <h3>Animal Care</h3>
+                    <p>Tips, tricks, and expert advice to ensure your animal friends are happy, healthy, and well cared for every day.</p>
+                </div>
+                <div class="service-card loading">
+                    <div class="service-icon purple">🏆</div>
+                    <h3>Pet Guide</h3>
+                    <p>Our essential guide covers nutrition, grooming, and fun activities that strengthen the bond between you and your pet.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Animals Gallery -->
+    <section id="animals" class="animals-gallery">
+        <div class="container">
+            <div class="section-header">
+                <div class="badge">🏠 Find Your Friend</div>
+                <h2>Adoptable Animals in <span class="text-blue">Kosovo</span></h2>
+                <p>Discover some of the lovely animals you can adopt and give a forever home to.</p>
+            </div>
+
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search for animals..." id="searchInput">
+            </div>
+
+            <div class="animals-grid" id="animalsGrid">
+                <div class="animal-card loading" data-name="polly parrot" data-description="friendly african grey parrot">
+                    <div class="animal-image">
+                        <img src="https://images.unsplash.com/photo-1562085482-c34f886206da?auto=format&fit=crop&w=400&q=80" alt="Polly the Parrot">
+                        <div class="animal-status">Available</div>
+                    </div>
+                    <div class="animal-info">
+                        <h3>Polly the Parrot</h3>
+                        <p>A friendly African Grey Parrot looking for a loving home.</p>
+                        <button class="btn btn-primary adopt-btn">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="animal-card loading" data-name="max dog" data-description="playful loyal companion">
+                    <div class="animal-image">
+                        <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=400&q=80" alt="Max the Dog">
+                        <div class="animal-status">Available</div>
+                    </div>
+                    <div class="animal-info">
+                        <h3>Max the Dog</h3>
+                        <p>3 years old, playful and loyal companion waiting for adoption.</p>
+                        <button class="btn btn-primary adopt-btn">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="animal-card loading" data-name="luna cat" data-description="gentle cuddles naps">
+                    <div class="animal-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Cat03.jpg" alt="Luna the Cat">
+                        <div class="animal-status">Available</div>
+                    </div>
+                    <div class="animal-info">
+                        <h3>Luna the Cat</h3>
+                        <p>A gentle 2-year-old cat who loves cuddles and naps.</p>
+                        <button class="btn btn-primary adopt-btn">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="animal-card loading" data-name="sammy snake" data-description="calm boa constrictor reptile">
+                    <div class="animal-image">
+                        <img src="https://images.unsplash.com/photo-1575019293570-1186f11ae46c?auto=format&fit=crop&w=400&q=80" alt="Sammy the Snake">
+                        <div class="animal-status">Available</div>
+                    </div>
+                    <div class="animal-info">
+                        <h3>Sammy the Snake</h3>
+                        <p>A calm boa constrictor, perfect for reptile lovers.</p>
+                        <button class="btn btn-primary adopt-btn">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="animal-card loading" data-name="bunny rabbit" data-description="fluffy hop play">
+                    <div class="animal-image">
+                        <img src="https://images.unsplash.com/photo-1464038293999-0fb8953380d9?auto=format&fit=crop&w=400&q=80" alt="Bunny the Rabbit">
+                        <div class="animal-status">Available</div>
+                    </div>
+                    <div class="animal-info">
+                        <h3>Bunny the Rabbit</h3>
+                        <p>A fluffy rabbit who loves to hop around and play.</p>
+                        <button class="btn btn-primary adopt-btn">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="animal-card loading" data-name="hammy hamster" data-description="tiny big heart small spaces">
+                    <div class="animal-image">
+                        <img src="https://images.unsplash.com/photo-1425082661705-1834bfd09dca?auto=format&fit=crop&w=400&q=80" alt="Hammy the Hamster">
+                        <div class="animal-status">Available</div>
+                    </div>
+                    <div class="animal-info">
+                        <h3>Hammy the Hamster</h3>
+                        <p>A tiny hamster with a big heart, ideal for small spaces.</p>
+                        <button class="btn btn-primary adopt-btn">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Animal Care Section -->
+    <section class="animal-care">
+        <div class="container">
+            <div class="care-content">
+                <div class="care-image">
+                    <div class="image-decoration"></div>
+                    <img src="https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/6996e6cb7dc85d03a1444c62/uyuyuy.jpg" alt="Caring for animals">
+                </div>
+                <div class="care-text">
+                    <div class="badge">💚 Our Mission</div>
+                    <h2>Love. Respect. <span class="text-green">Care.</span></h2>
+                    <p>Taking care of animals means more than just feeding them. It's about giving them love, attention, and a safe place to call home. Spend time playing with them, talk to them, and make sure they get regular checkups with a vet.</p>
+                    <p>Animals have emotions too — they feel joy, sadness, excitement, and fear. When you show them kindness, they give you unconditional love in return. Whether it's a wagging tail or a gentle purr, they'll thank you in their own way.</p>
+                    <a href="#contact" class="btn btn-primary btn-lg">
+                        Learn About Care <span class="arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-us">
+        <div class="container">
+            <div class="section-header">
+                <div class="badge">👥 Meet Our Friends</div>
+                <h2>About Us</h2>
+                <p>Meet some of our amazing furry friends looking for a forever home!</p>
+            </div>
+
+            <div class="about-cards">
+                <div class="about-card loading">
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=300&q=80" alt="Sophie the cat">
+                        <div class="age-badge">3 years old</div>
+                    </div>
+                    <h3>Sophie</h3>
+                    <p>I'm Sophie and I love to dance and cuddle on rainy days. Someone adopt me!</p>
+                    <button class="btn btn-purple adopt-btn">Adopt Sophie</button>
+                </div>
+
+                <div class="about-card loading">
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=300&q=80" alt="Max the dog">
+                        <div class="age-badge">5 years old</div>
+                    </div>
+                    <h3>Max</h3>
+                    <p>Hi, I'm Max! I'm a gentle soul who loves walks and belly rubs. Looking for a forever friend.</p>
+                    <button class="btn btn-purple adopt-btn">Adopt Max</button>
+                </div>
+
+                <div class="about-card loading">
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1543852786-1cf6624b9987?auto=format&fit=crop&w=300&q=80" alt="Luna the cat">
+                        <div class="age-badge">2 years old</div>
+                    </div>
+                    <h3>Luna</h3>
+                    <p>Luna here! I'm a curious kitty who loves chasing butterflies. Can I come home with you?</p>
+                    <button class="btn btn-purple adopt-btn">Adopt Luna</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Footer -->
+    <footer id="contact" class="contact-footer">
+        <div class="container">
+            <div class="footer-content">
+                <h2>Want to Know More About Helping Animals?</h2>
+                <p>We'd love to hear from you! Whether you have questions about adopting, volunteering, or learning more about stray animals in Kosovo — we're here to help.</p>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                </form>
+
+                <div id="formMessage" class="form-message"></div>
+
+                <div class="social-links">
+                    <a href="#" class="social-link">
+                        <div class="social-icon">📧</div>
+                    </a>
+                    <a href="#" class="social-link">
+                        <div class="social-icon">📷</div>
+                    </a>
+                    <a href="#" class="social-link">
+                        <div class="social-icon">📘</div>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Animal Rescue Kosovo. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script/javascript.js"></script>
+</body>
+</html>
