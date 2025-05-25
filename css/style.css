@@ -324,11 +324,13 @@ body {
 .badge.orange {
   background: rgba(234, 88, 12, 0.2);
   border-color: rgba(234, 88, 12, 0.3);
+  margin-left: -100px;
 }
 
 .badge.green {
   background: rgba(22, 163, 74, 0.2);
   border-color: rgba(22, 163, 74, 0.3);
+  margin-left: -100px;
 }
 
 .badge.blue {
@@ -352,6 +354,7 @@ body {
   line-height: 1.2;
   margin-bottom: 1.5rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  margin-left: -100px;
 }
 
 .gradient-text {
@@ -380,6 +383,7 @@ body {
   margin-bottom: 2rem;
   opacity: 0.9;
   line-height: 1.7;
+  margin-left: -100px;
 }
 
 .hero-buttons {
@@ -387,6 +391,7 @@ body {
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: center;
+  margin-left: -100px;
 }
 
 /* Section Styles */
@@ -597,10 +602,22 @@ body {
 }
 
 /* Animal Care Section */
-.animal-care {
+/* .animal-care {
   padding: 5rem 0;
   background: var(--white);
 }
+
+.animal-care .care-image img {
+  width: 100% !important;
+  max-width: 500px !important;
+  border-radius: 15px !important;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2) !important;
+  margin: 0 auto !important;
+  display: block !important;
+  object-fit: cover !important;
+}
+
+
 
 .care-content {
   display: grid;
@@ -655,7 +672,175 @@ body {
   color: var(--text-light);
   line-height: 1.8;
   margin-bottom: 1.5rem;
+} */
+
+/* Animal Care Section */
+.animal-care {
+  padding: 5rem 0;
+  background: var(--white);
 }
+
+/* Care Content Layout */
+.care-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 3rem;
+  align-items: center;
+}
+
+/* Care Image Container */
+.care-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--border-radius);
+}
+
+/* Image Decoration */
+.image-decoration {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, var(--primary-green), var(--primary-blue));
+  border-radius: var(--border-radius);
+  z-index: -1;
+  transform: rotate(6deg);
+}
+
+/* Image Overlay for Gradient Effect */
+.image-overlay {
+  position: relative;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.image-overlay::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1));
+  z-index: 1;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+.image-overlay:hover::before {
+  opacity: 1;
+}
+
+/* Care Image */
+.care-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.care-image img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Care Text */
+.care-text .badge {
+  background: rgba(22, 163, 74, 0.1);
+  color: var(--primary-green);
+  border-color: rgba(22, 163, 74, 0.2);
+}
+
+.care-text h2 {
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--text-dark);
+}
+
+.care-text p {
+  font-size: 1.125rem;
+  color: var(--text-light);
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+/* Enhanced Care Image */
+.care-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+}
+
+.care-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s ease, box-shadow 0.5s ease, filter 0.5s ease;
+}
+
+/* Hover Effects */
+.care-image:hover img {
+  transform: scale(1.1) rotate(3deg);
+  /* Zoom and slight rotation */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+  filter: grayscale(50%) brightness(1.2);
+  /* Grayscale with increased brightness */
+}
+
+/* Gradient Overlay */
+.care-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1));
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  border-radius: var(--border-radius);
+}
+
+.care-image:hover::before {
+  opacity: 1;
+  /* Show gradient overlay on hover */
+}
+
+/* Floating Animation */
+.care-image img {
+  animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /* About Us Section */
 .about-us {
@@ -730,7 +915,7 @@ body {
 
 /* Contact Footer */
 .contact-footer {
-  background: linear-gradient(135deg, #1f2937, #374151);
+  background: linear-gradient(135deg, #1f2937, #374151) !important;
   color: var(--white);
   padding: 4rem 0 2rem;
   text-align: center;
