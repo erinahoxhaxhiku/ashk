@@ -214,8 +214,9 @@ body {
 }
 
 .btn-purple {
-  background: linear-gradient(135deg, var(--primary-purple), #a855f7);
+  background: linear-gradient(135deg, var(--primary-blue), var(--primary-green));
   color: var(--white);
+  margin: 10px;
 }
 
 .btn-purple:hover {
@@ -253,7 +254,7 @@ body {
   text-align: center;
 }
 
-.hero-bg {
+/* .hero-bg {
   position: absolute;
   top: 0;
   left: 0;
@@ -266,6 +267,28 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+} */
+
+/* Hero Background */
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  overflow: hidden;
+  /* Ensure the image doesn't overflow */
+}
+
+/* Hero Image */
+.hero-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Ensures the image covers the entire section */
+  display: block;
+  /* Removes any inline spacing issues */
 }
 
 .hero-overlay {
@@ -283,6 +306,7 @@ body {
   max-width: 800px;
   padding: 0 2rem;
   z-index: 2;
+  margin-left: -800px;
 }
 
 .badge {
@@ -386,7 +410,7 @@ body {
 
 .section-header p {
   font-size: 1.25rem;
-  color: var(--text-light);
+  color: #474c55;
   max-width: 800px;
   margin: 0 auto;
   line-height: 1.7;
@@ -395,15 +419,19 @@ body {
 .text-green {
   color: var(--primary-green);
 }
+
 .text-blue {
   color: var(--primary-blue);
 }
+
 .text-orange {
   color: var(--primary-orange);
 }
+
 .text-red {
   color: var(--primary-red);
 }
+
 .text-purple {
   color: var(--primary-purple);
 }
@@ -632,7 +660,7 @@ body {
 /* About Us Section */
 .about-us {
   padding: 5rem 0;
-  background: linear-gradient(135deg, #fef3c7, #fef9e7);
+  background: #d3dce3;
 }
 
 .about-cards {
@@ -1487,6 +1515,7 @@ html {
 
 /* Print Styles */
 @media print {
+
   .navbar,
   .mobile-menu-btn,
   .btn,
